@@ -1,7 +1,6 @@
 import { Controller, Get, Param, Post, Put,Delete, NotFoundException, Body } from '@nestjs/common';
 import { Transaction, TransactionsService } from './transactions.service';
-import { get } from 'http';
-import { expenses } from 'src/data';
+
 @Controller('transactions')
 export class TransactionsController {
     constructor(private readonly transactionsService: TransactionsService) {}
